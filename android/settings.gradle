@@ -1,0 +1,3 @@
+rootProject.name = 'Spartan'
+
+include ':app'

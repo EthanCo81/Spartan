@@ -9,27 +9,26 @@ import {
   View,
 } from 'react-native';
 
-class SpartanBar extends React.Component{
+class WorkoutScreen extends Component{
 
     constructor(props){
         super(props);
     }
 
     render(){
-        return(
-        <View>
-            SPARTAN
-        </View>
+        return (
+            <View>
+                
+            </View>
         );
     }
 
     styles = StyleSheet.create(
         {
             container:{
-                backgroundColor: '#CF1102'
+                backgroundColor: '#EEEEEE'
             }
         }
     );
-
 
 }

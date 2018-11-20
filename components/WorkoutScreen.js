@@ -8,8 +8,9 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { createStackNavigator, createAppContainer } from "react-navigation";
 
-class WorkoutScreen extends Component{
+export class WorkoutScreen extends React.Component{
 
     constructor(props){
         super(props);
@@ -23,7 +24,13 @@ class WorkoutScreen extends Component{
         );
     }
 
-    styles = StyleSheet.create(
+    const AppNavigator = createStackNavigator({
+        Workout:{
+            screen: WorkoutScreen
+        }
+    })
+
+    const styles = StyleSheet.create(
         {
             container:{
                 backgroundColor: '#EEEEEE'

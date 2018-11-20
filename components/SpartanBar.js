@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 
-class SpartanBar extends React.Component{
+export class SpartanBar extends React.Component{
 
     constructor(props){
         super(props);
@@ -23,7 +23,7 @@ class SpartanBar extends React.Component{
         );
     }
 
-    styles = StyleSheet.create(
+    const styles = StyleSheet.create(
         {
             container:{
                 backgroundColor: '#CF1102'

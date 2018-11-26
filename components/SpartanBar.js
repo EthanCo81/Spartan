@@ -23,13 +23,13 @@ export class SpartanBar extends React.Component{
         );
     }
 
-    const styles = StyleSheet.create(
-        {
-            container:{
-                backgroundColor: '#CF1102'
-            }
-        }
-    );
 
 
 }
+const styles = StyleSheet.create(
+    {
+        container:{
+            backgroundColor: '#CF1102'
+        }
+    }
+);

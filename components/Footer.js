@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 
-export class Footer extends Component{
+export class Footer extends React.Component{
 
     constructor(props){
         super(props);
@@ -42,11 +42,10 @@ export class Footer extends Component{
             </View>
         );
     }
-
-    const styles = StyleSheet.create({
-        container:{
-            backgroundColor: '#CF1102'
-        }
-    });
 }
+const styles = StyleSheet.create({
+    container:{
+        backgroundColor: '#CF1102'
+    }
+});
 

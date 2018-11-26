@@ -24,13 +24,13 @@ export class WorkoutScreen extends React.Component{
         );
     }
 
-    const AppNavigator = createStackNavigator({
+    AppNavigator = createStackNavigator({
         Workout:{
             screen: WorkoutScreen
         }
     })
 
-    const styles = StyleSheet.create(
+    styles = StyleSheet.create(
         {
             container:{
                 backgroundColor: '#EEEEEE'

@@ -23,8 +23,18 @@ export class CalculatorScreen extends React.Component{
     }
 
     calculateSquatMax(weight, reps){
+        if(reps<1) return null;
         if(reps===1) return weight;
+        let max = weight + (4+reps/2)*(reps/2)+(reps%2)*3;
+        return max;
         
+    }
+
+    calculateDeadliftMax(weight, reps){
+        if(reps<1) return null;
+        if(reps===1) return weight;
+        let max = weight + (7+reps/2)*(reps/2)+(reps%2)*4;
+        return max;
     }
 
     render(){

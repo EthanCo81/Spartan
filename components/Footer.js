@@ -8,6 +8,9 @@ import {
   TouchableHighlight,
   View,
 } from 'react-native';
+import { WorkoutScreen } from './components/WorkoutScreen';
+import { CalculatorScreen } from './components/CalculatorScreen';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 export class Footer extends React.Component{
 
@@ -43,6 +46,18 @@ export class Footer extends React.Component{
         );
     }
 }
+
+const RootStack = createStackNavigator(
+    {
+      Workout: WorkoutScreen,
+      Calculator: CalculatorScreen
+    },
+    {
+      initialRouteName: 'Workout',
+    }
+  );
+  
+const AppContainer = createAppContainer(RootStack);
 const styles = StyleSheet.create({
     container:{
         backgroundColor: '#CF1102'

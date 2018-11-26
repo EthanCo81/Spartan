@@ -28,10 +28,26 @@ export class WorkoutScreen extends React.Component{
 
 
 }
-    const styles = StyleSheet.create(
-        {
-            container:{
-                backgroundColor: '#EEEEEE'
-            }
+const styles = StyleSheet.create(
+    {
+        container:{
+            backgroundColor: '#EEEEEE'
         }
-    );
+    }
+);
+
+class Workout extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+
+    render(){
+        return (
+            <View>
+                
+            </View>
+        );
+    }
+
+}

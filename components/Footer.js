@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 
-export class Footer extends Component{
+export class Footer extends React.Component{
 
     constructor(props){
         super(props);

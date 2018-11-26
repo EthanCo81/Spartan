@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 
 
-export class CalculatorScreen extends Component{
+export class CalculatorScreen extends React.Component{
     constructor(props){
         super(props);
     }

@@ -37,11 +37,11 @@ export class Footer extends React.Component{
     render(){
 
         return(
-            <View style = {sytles.container}>
+            <View style = {styles.container}>
                 <View onPress={goToWorkouts}><TouchableHighlight>W</TouchableHighlight></View>
-                <View onClick={goToSearch}><TouchableHighlight>S</TouchableHighlight></View>
-                <View onClick={goToCalculator}><TouchableHighlight>C</TouchableHighlight></View>
-                <View onClick={goToProfile}><TouchableHighlight>P</TouchableHighlight></View>
+                <View onPress={goToSearch}><TouchableHighlight>S</TouchableHighlight></View>
+                <View onPress={goToCalculator}><TouchableHighlight>C</TouchableHighlight></View>
+                <View onPress={goToProfile}><TouchableHighlight>P</TouchableHighlight></View>
             </View>
         );
     }
